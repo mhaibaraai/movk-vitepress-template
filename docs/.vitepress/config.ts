@@ -1,10 +1,17 @@
-import { defineConfig } from 'vitepress';
+import { defineConfig } from 'vitepress'
+import { demoPreviewPlugin } from '@movk-repo/demo-preview-plugin'
 
 // refer https://vitepress.dev/reference/site-config for details
 export default defineConfig({
   lang: 'en-US',
   title: 'VitePress',
   description: 'Vite & Vue powered static site generator.',
+
+  markdown: {
+    config: (md) => {
+      md.use(demoPreviewPlugin)
+    },
+  },
 
   themeConfig: {
     nav: [

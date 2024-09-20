@@ -7,6 +7,8 @@
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
-    "vitepress": "latest"
+    "vitepress": "latest",
+    "@movk-repo/demo-preview-container": "^1.1.0",
+    "@movk-repo/demo-preview-plugin": "^1.1.0"
   }
 }
